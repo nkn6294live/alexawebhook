@@ -1,0 +1,19 @@
+{
+  "name": "nodehttptest",
+  "version": "1.0.0",
+  "description": "test alexa",
+  "main": "server.js",
+  "scripts": {
+    "test": "node test.js"
+  },
+  "keywords": [
+    "test",
+    "alexa"
+  ],
+  "author": "none",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
