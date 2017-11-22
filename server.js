@@ -20,7 +20,7 @@ function bkavHandler(req, res) {
     let skillID = req.body.session.application.applicationId;
     let text = req.body.request.intent.name;
     console.log('HomeID:' + homeID);
-    console.log('SkillID:' + SkillID);
+    console.log('SkillID:' + skillID);
     console.log('Text:' + text);
     res.send({
         response: {
