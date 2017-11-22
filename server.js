@@ -16,20 +16,22 @@ router.route('/')
         next();
 });
 function bkavHandler(req, res) {
-    console.log("HomeID:" + req.params.homeID);
-    console.log("SkillID:" + req.body.session.application.applicationId);
-    console.log("Text:" + req.body.request.intent.name);
+    let homeID = req.params.homeID;
+    let skillID = req.body.session.application.applicationId;
+    let text = req.body.request.intent.name;
+    console.log('HomeID:' + homeID);
+    console.log('SkillID:' + SkillID);
+    console.log('Text:' + text);
     res.send({
         response: {
             outputSpeech: {
-                type: "PlainText",
-                text: "Success OK"
+                type: 'PlainText',
+                text: 'Success OK active '  + text
             }
         }
     }).end();
 }
 router.route('/alexa/:homeID').get(bkavHandler).post(bkavHandler);
 app.use('/bkav', router);
-
 app.listen(port);
 console.log('Running at ' + port);
