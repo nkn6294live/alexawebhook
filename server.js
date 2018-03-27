@@ -26,7 +26,7 @@ function bkavHandler(req, res) {
         response: {
             outputSpeech: {
                 type: 'PlainText',
-                text: 'Success OK active '  + text
+                text: 'Success OK active for'  + text
             }
         }
     }).end();
