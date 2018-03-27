@@ -35,3 +35,5 @@ router.route('/alexa/:homeID').get(bkavHandler).post(bkavHandler);
 app.use('/bkav', router);
 app.listen(port);
 console.log('Running at ' + port);
+
+//https://alexawebhook.herokuapp.com/bkav/alexa/testID
